@@ -35,11 +35,11 @@ images:
 
 # CPUs
 # 🟢 Builtin default: min(4, host CPU cores)
-cpus: null
+cpus: 6
 
 # Memory size
 # 🟢 Builtin default: min("4GiB", half of host memory)
-memory: null
+memory: 8GiB
 
 # Disk size
 # 🟢 Builtin default: "100GiB"
@@ -49,7 +49,7 @@ disk: null
 # 🟢 Builtin default: null (Mount nothing)
 # 🔵 This file: Mount the home as read-only, /tmp/lima as writable
 mounts:
-  - location: "~"
+  - location: "~/nydus"
     # Configure the mountPoint inside the guest.
     # 🟢 Builtin default: value of location
     mountPoint: null
