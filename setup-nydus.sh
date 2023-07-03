@@ -1,6 +1,5 @@
 #!/bin/bash
 
-export PATH=$PATH:/usr/local/go/bin
 cd /tmp && git clone https://github.com/containerd/nydus-snapshotter.git
 cd nydus-snapshotter && make && mv bin/containerd-nydus-grpc /usr/bin/containerd-nydus-grpc
 cd /tmp
