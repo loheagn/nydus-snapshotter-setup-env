@@ -56,7 +56,7 @@ mounts:
     # CAUTION: `writable` SHOULD be false for the home directory.
     # Setting `writable` to true is possible, but untested and dangerous.
     # 🟢 Builtin default: false
-    writable: null
+    writable: true
     sshfs:
       # Enabling the SSHFS cache will increase performance of the mounted filesystem, at
       # the cost of potentially not reflecting changes made on the host in a timely manner.
