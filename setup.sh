@@ -17,5 +17,5 @@ limactl shell ${instance_name} mkdir -p /tmp/bin
 limactl copy setup-nydus.sh ${instance_name}:/tmp/bin/setup-nydus.sh
 limactl copy setup-go.sh ${instance_name}:/tmp/bin/setup-go.sh
 limactl shell ${instance_name} sudo bash -c 'chmod +x /tmp/bin/* && cp /tmp/bin/* /usr/local/bin/'
-limactl shell ${instance_name} sudo /usr/local/bin/setup-go.sh
-limactl shell ${instance_name} sudo /usr/local/bin/setup-nydus.sh
+limactl shell ${instance_name} sudo bash --login /usr/local/bin/setup-go.sh
+limactl shell ${instance_name} sudo bash --login /usr/local/bin/setup-nydus.sh
