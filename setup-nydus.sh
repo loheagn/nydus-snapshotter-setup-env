@@ -11,7 +11,6 @@ mv nydus-static/nydus-image nydus-static/nydusd nydus-static/nydusify /usr/bin/
 rm -rf nydus-static nydus-static-$NYDUS_VER-linux-amd64.tgz
 
 tee -a /etc/containerd/config.toml > /dev/null <<EOT
-[proxy_plugins]
 [proxy_plugins.nydus]
 address = "/run/containerd-nydus/containerd-nydus-grpc.sock"
 type = "snapshot"
